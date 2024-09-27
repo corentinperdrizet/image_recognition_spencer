@@ -1,0 +1,16 @@
+# Ignore dataset contents but not the directories themselves
+model1/data/*
+model2/data/*
+model3/data/*
+model4/data/*
+model5/data/*
+
+# Allow the empty 'data' directories to be tracked
+!model1/data/.gitignore
+!model2/data/.gitignore
+!model3/data/.gitignore
+!model4/data/.gitignore
+!model5/data/.gitignore
+
+# Optionally ignore the virtual environment (tf-metal-env) if you don’t need to upload it
+tf-metal-env/
